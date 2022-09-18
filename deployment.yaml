@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-web-hello-world-deployment
+  labels:
+    app: go-web-hello-world
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-web-hello-world
+  template:
+    metadata:
+      labels:
+        app: go-web-hello-world
+    spec:
+      containers:
+        - name: go-web-hello-world
+          image: xulingjia/go-web-hello-world:v0.1
+          ports:
+            - containerPort: 8081
+              protocol: TCP
