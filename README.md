@@ -82,8 +82,9 @@ sudo cat /etc/gitlab/initial_root_password
 2. use the password showed above to log in with account: _root_
 3. create a user **Username**: xulingjia, **Password**: xulingjia
    * login to update password 
-4. click **menu** to create `group`
-5. create `project` within group page
+4. click **Menu** to create group: `demo`
+5. create project: `go-web-hello-world`
+6. visit http://127.0.0.1:28080/demo/go-web-hello-world/ to check gitlab work as expected
 
 ### Task 4: build the app and expose ($ go run) the service to 28081 port
 #### references:
@@ -221,7 +222,7 @@ sudo cat /etc/gitlab/initial_root_password
       prometheu 15241 gitlab-prometheus   13u  IPv4  86394      0t0  TCP localhost:45388->localhost:8082 (ESTABLISHED)
       ```
 
-       Code snippet of /etc/gitlab/gitlab.rb
+       Code snippet from `/etc/gitlab/gitlab.rb`
        ```ruby
        ##! Specifies where Prometheus metrics endpoints should be made available for Sidekiq processes.
        # sidekiq['metrics_enabled'] = true
@@ -346,7 +347,7 @@ sudo cat /etc/gitlab/initial_root_password
       --ignore-preflight-errors=NumCPU
     ```
 
-    There was an error about number of CPUs is less than 2, so we add `--ignore-preflight-errors=NumCPU ` into the `kube init` command
+   **Note**: Because we are running in a virtual machine, there was an error about number of CPUs being less than 2, so we add `--ignore-preflight-errors=NumCPU` into the `kube init` command to ignore this check
 
     > [preflight] Running pre-flight checks
     error execution phase preflight: [preflight] Some fatal errors occurred:
