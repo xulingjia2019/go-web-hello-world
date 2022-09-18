@@ -548,3 +548,16 @@ sudo cat /etc/gitlab/initial_root_password
     ```
 4. put token into website and login
    ![kubernetes dashboard](./kubernetes-dashboard.jpg)
+
+
+### Task 13: publish your work
+#### steps:
+1. push all files to GitHub
+    ```bash
+    ## change remote repository from Gitlab to GitHub
+    git remote rm origin
+    
+    git remote add origin https://github.com/xulingjia2019/go-web-hello-world.git
+    git branch -M main
+    git push -u origin main
+    ```
