@@ -1,15 +1,15 @@
 # Go Web Hello World
 
 ## File Descriptions
-| File                     | Description                                                                 | Task No |
-|--------------------------|-----------------------------------------------------------------------------|---------|
-| main.go                  | source code of `go-web-hello-world`                                         | Task 3  |
-| dockerfile               | dockerfile of `go-web-hello-world`                                          | Task 6  |
-| config                   | config file of single node k8s cluster                                      | Task 9  |
-| deployment.yaml          | k8s deployment config `go-web-hello-world`                                  | Task 10 |
-| service.yaml             | k8s service config `go-web-hello-world`                                     | Task 10 |
-| recommended.yaml         | k8s config file for deploying kubernetes dashboard                          | Task 11 |
-| dashboard-adminuser.yaml | k8s config file for generating admin user and token of kubernetes dashboard | Task 12 |
+| File                                                   | Description                                                                 | Task No |
+|--------------------------------------------------------|-----------------------------------------------------------------------------|---------|
+| [main.go](./main.go)                                   | source code of `go-web-hello-world`                                         | Task 3  |
+| [dockerfile](./dockerfile)                             | dockerfile of `go-web-hello-world`                                          | Task 6  |
+| [admin.conf](./admin.conf)                             | config file of single node k8s cluster                                      | Task 9  |
+| [deployment.yaml](./deployment.yaml)                   | k8s deployment config `go-web-hello-world`                                  | Task 10 |
+| [service.yaml](./service.yaml)                         | k8s service config `go-web-hello-world`                                     | Task 10 |
+| [recommended.yaml](./recommended.yaml)                 | k8s config file for deploying kubernetes dashboard                          | Task 11 |
+| [dashboard-adminuser.yaml](./dashboard-adminuser.yaml) | k8s config file for generating admin user and token of kubernetes dashboard | Task 12 |
 
 
 ## Task Steps
